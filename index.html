@@ -18,21 +18,11 @@
     </nav>
   </header>
 
-  <h1>Appliance Energy Consumption</h1>
-  <div id="content"></div>
-  <!-- Give the SVG a size so shapes can be seen -->
-  <svg width="300" height="150"></svg>
-  <!-- Load D3 first, then your D3 code file -->
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="energy-d3.js"></script>
-
   <main>
     <h1>Appliance Energy Use in Australia</h1>
     <p>This site gives a simple overview of household appliance energy consumption in the Australian market.</p>
       
-      <!-- …your existing content… -->
-      <!-- NEW: Container for T04-3 chart -->
-      <div class="responsive-svg-container"></div>
+    <div class="responsive-svg-container"></div>
 
     <section class="card">
       <h2>Quick facts</h2>
@@ -51,12 +41,10 @@
     </div>
   </footer>
 
-      <!-- D3 library -->
-      <script src="https://d3js.org/d3.v7.min.js"></script>
-      <!-- NEW: JS for T04-3 only -->
-      <script src="t04-3-bars.js"></script>
-      <!-- Old T04-2 demo (temporarily disabled) -->
-      <!-- <script src="energy-d3.js"></script> -->
+  <!-- Load D3 before the T04-3 chart script. -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="t04-3-bars.js"></script>
+  <!-- Keep the old T04-2 demo disabled: <script src="energy-d3.js"></script> -->
 
 </body>
 </html>

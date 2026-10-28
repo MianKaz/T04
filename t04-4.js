@@ -5,5 +5,5 @@ d3.csv("data/tvBrandCount.csv", d => {
         count: +d.count // '+' converts string to number
     };
 }).then(data => {
-console.log(d); // inspect raw rows as they stream in
+    console.log(data); // inspect the parsed rows
 });
